@@ -29,6 +29,15 @@ $(document).ready(function() {
         $('#postings-Math')[0].style.display = "flex";
     });
 
+    $('.profile-link').on('click', function() {
+        var postings = $('.posting-wrapper');
+        for (var i = 0; i < postings.length; i++) {
+            postings[i].style.display = "none";
+        }
+        $('#profile-section')[0].style.display = "block";
+    });
+
+
     $('.searchbar').on('keyup', function() {
         var filter, list, li, i;
         filter = $(this)[0].value.toUpperCase();
