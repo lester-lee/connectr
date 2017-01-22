@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 100vh;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  background: url('https://static1.squarespace.com/static/5722799c27d4bdbb99191741/5724b5fcb654f975531e98c9/5724b5fdb654f975531e98ca/1462023681196/Williams-college-campus.jpg?format=2500w') no-repeat;
+  background-size: 100% 100%;
+}
+
+ h1, h2, h3, h4 {
+  font-family: 'Merriweather', serif;
+  color: #8d63b2;
+}
+
+#register-form {
+  display: inline-block;
+  background-color: #fff;
+  position: absolute;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #bbb;
+}
+
+#register-form input {
+  width: 250px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+  padding-left: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+#register-form input:focus{
+  outline: 0;
+  border: 1px solid #bd90e5;
+}
+
+#login-button {
+  position: relative;
+  border-radius: 5px;
+  background: #8d63b2;
+  color: #fff;
+  width: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+}
+
+#login-button:hover {
+  cursor: pointer;
+  background: #d086d6;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main-wrapper {
+  display: flex;
+}
+
+nav {
+  width: 8%;
+  height: 100vh;
+  background: #8d63b2;
+  display: flex;
+  flex-flow: column;
+}
+
+#profile {
+  position: relative;
+  top: 5%;
+}
+
+#profile img {
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+}
+
+nav ul {
+  position: relative;
+  top: 5%;
+  list-style: none;
+  padding: 0px;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+}
+
+.nav-category {
+  height: 50px;
+  padding: none;
+  color: #333;
+  font-size: 25px;
+}
+
+.nav-category:hover {
+  cursor: pointer;
+  background: #77497a;
+  color: #fff;
+}
+
+.nav-category:active {
+  background: #67396a;
+}
+
+.nav-extension {
+  display: none;
+  width: 15%;
+  height: 100vh;
+  background: #77497a;
+}
+
+.show-content {
+  display: block;
+}
+
+.active-tab {
+  background: #77497a;
+  color: #fff;
+}
+
+section {
+  background: #fff;
+  flex-grow: 1;
+  height: 100vh;
+}

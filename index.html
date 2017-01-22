@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>connectr</title>
-  <script src="user.js" charset="utf-8"></script>
+    <meta charset="utf-8">
+    <title>connectr</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="asset/connectr.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
 </head>
+
 <body>
-  <form>
-    Register<br>
-    Username:<input type="text" name="username"></input><br>
-    Password:<input type="password" name="password"></input><br>
-    <input type="submit" value="Submit">
-  </form>
+    <div id="register-form">
+
+      <h1>Connectr</h1>
+      <input type="text" name="username" placeholder="Username"></input><br>
+      <input type="password" name="password" placeholder="Password"></input><br>
+      <a href="dashboard.html"><div id="login-button">Login</div></a>
+    </div>
 </body>
+
 </html>
