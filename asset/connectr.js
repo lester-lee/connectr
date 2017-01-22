@@ -1,5 +1,10 @@
 $(document).ready(function() {
     $('.nav-category').on('click', function() {
+
+        var postings = $('.posting-wrapper');
+        for (var i = 0; i < postings.length; i++) {
+            postings[i].style.display = "none";
+        }
         $('.nav-category').removeClass('active-tab');
         $(this).addClass('active-tab');
         var catnum = $(this).attr('data-catnum');
@@ -36,5 +41,13 @@ $(document).ready(function() {
                 li[i].style.display = "none";
             }
         }
+    });
+
+    $('#make-posting').on('click', function() {
+        var postings = $('.posting-wrapper');
+        for (var i = 0; i < postings.length; i++) {
+            postings[i].style.display = "none";
+        }
+        $('#create-post')[0].style.display = "flex";
     });
 });
