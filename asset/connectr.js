@@ -8,6 +8,22 @@ $(document).ready(function() {
         $(extendID).addClass('show-content');
     });
 
+    $('#open-german').on('click', function() {
+        var postings = $('.posting-wrapper');
+        for (var i = 0; i < postings.length; i++) {
+            postings[i].style.display = "none";
+        }
+        $('#postings-German')[0].style.display = "flex";
+    });
+
+    $('#open-math').on('click', function() {
+        var postings = $('.posting-wrapper');
+        for (var i = 0; i < postings.length; i++) {
+            postings[i].style.display = "none";
+        }
+        $('#postings-Math')[0].style.display = "flex";
+    });
+
     $('.searchbar').on('keyup', function() {
         var filter, list, li, i;
         filter = $(this)[0].value.toUpperCase();

@@ -149,6 +149,10 @@ section {
     overflow-y: scroll;
 }
 
+.posting-wrapper {
+    display: none;
+}
+
 .posting {
     display: flex;
     height: 100px;
@@ -156,10 +160,11 @@ section {
     border: 1px solid #bbb;
     border-radius: 10px;
     padding: 10px;
+    margin: 5px 0px;
 }
 
 .posting-profile {
-    width: 10%;
+    width: 15%;
     display: flex;
     flex-flow: column;
     align-items: center;
